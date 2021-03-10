@@ -1,0 +1,264 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+
+.produtos li:hover {
+	border-color: #C78C19;
+}
+
+.produtos li:active {
+	border-color: #088C19;	
+}
+
+.produtos li:hover h2 {
+	font-size: 34px;
+}
+
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+footer {
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+
+main {
+	/*Aqui fiz a centralização do tesxto todo do main
+	width: 940px;
+	margin: 0 auto; tirei e coloquei em todos os elementos principal, mapa e beneficios*/
+}
+
+form {
+	margin: 40px 0;
+}
+
+form label, form legend {
+	display:block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	width:40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: darkorange;
+	transform: scale(1.2);
+}
+
+table {
+	margin: 20px 0 40px;
+}
+
+thead {
+	background: #555555;
+	color: white;
+	font-weight: bold;
+}
+
+td, th {
+	border: 1px solid #000000;
+	padding: 8px 15px;
+}
+/*CSS da página inicial*/
+.banner{
+	width: 100%;
+}
+.tituto-principal{
+	text-align: center;
+	font-size: 2em;/*dobro a medida (em) original*/ 
+	margin: 0 0 1em;
+	clear: left; /*limpa o floar que usei no utensilios*/
+	text-shadow: 2px 2px red ;/*Coloquei a sobra no titulo, olhar os titulos principais*/
+}
+
+.principal{
+	padding: 3em 0;
+	background-color: #FFFFFF;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.principal p{
+	margin:  0 0 1em;
+}
+.principal strong{
+	font-weight: bold;
+}
+.principal em{
+	font-style: italic;
+}
+.utensilios{
+	width: 120px;
+	float: left;/*faco o texto vir do lado da imagem*/
+	margin: 0 20px 20 px 0;
+}
+.beneficio {
+	text-align: center;
+	font-size: 2em;/*dobro a medida (em) original*/ 
+}
+.titulo-centralizado{
+	text-align: center;
+	font-size: 40px;
+	padding: 40px 0;
+}
+.mapa{
+	padding: 3em 0;
+	background: linear-gradient(white,grey);/*Assim faço o degrade de fundo pelo linear-gradient*/
+}
+.mapa-conteudo{
+	width: 940px;
+	margin: 0 auto;
+}
+.mapa p{
+	margin: 0 0 2em ;
+	text-align: center;
+}
+.beneficios{
+	padding: 3em 0;
+	background-color: gray;
+	/*box-shadow: inset 0 0 30px red;*//*Usando o inset faz sobra inteira no elemento, Testando a sobra em todo o quadro de beneficios*/ 
+}
+.conteudo-beneficios{
+	width: 640px;
+	margin: auto;
+	width: 940px;
+	margin: 0 auto;
+}
+.lista-beneficios{
+	width: 40%;
+	display: inline-block;/*estava ocupando 100% da largura, entao uso o displaY: inline-block para resolvar*/
+	vertical-align: top;/*Quero que fiquei alinhada com a linha de cima */
+}
+.itens{
+	line-height: 1.5em;/*Texto estava muito grudado ai usei para espaçar um pouco as letras*/
+}
+.itens::before{ /*Coloco antes de itens uma estrela*/
+	content: "🌟";
+}
+/*Quero deixar em negrito somente o primeiro elemento da lista "nth-child(n)" n é qual linha que quero alterar*/
+.itens:nth-child(1){
+	font-weight: bold;/*Quero deixar em negrito somente o primeiro elemento da lista*/
+}
+.imagem-beneficios{
+	width: 60%;
+	opacity:  1 ;/*Adaptar a opacidade do elemento vai de 1(100% a 0(nada)*/
+	transition: 400ms;/*Coloco uma transição de 400ms*/
+	box-shadow: 10px 10px 30px 20px black;/*colocando sobra por tras da imagem, fiz o detalhe escuro no fundo da foto*/
+}
+.imagem-beneficios:hover{/*Quando o mouse estiver e, cima uso hover e ele tem opacidade 1*/
+	opacity: 0.3;
+}
+
+.video{
+	width: 560px;
+	margin: 2em auto;
+}
+
+/*Entregar para telas de celular com esses comandos*/
+@media screen and (max-width: 480px ){
+	.caixa, .principal, .conteudo-beneficios{
+		width: auto;
+	}
+	h1{
+		text-align: center;
+	}
+	nav {
+		position: static;
+	}
+	.lista-beneficios, imagem-beneficios {
+		width: 100%
+	}
+}
